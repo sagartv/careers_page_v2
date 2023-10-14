@@ -1,2 +1,3 @@
-# careers_page
-Following along with FLASK tutorial to learn how to build FLASK pages and integrations https://www.freecodecamp.org/news/develop-database-driven-web-apps-with-python-flask-and-mysql/
+1) Added home.html to templates
+2) Filled in CSS elements
+3) Used Bootstrap CSS
