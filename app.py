@@ -3,36 +3,6 @@ from database import get_jobs_from_db
 
 app = Flask(__name__)
 
-PLACEHOLDER_JOBS = [
-  {
-    'id' : '1',
-    'title' : 'Data Scientist',
-    'location' : 'Bengaluru, India',
-    'salary' : 'Rs. 16,00,000'
-  },
-  {
-    'id' : '2',
-    'title' : 'Data Analyst',
-    'location' : 'Bengaluru, India',
-    'salary' : 'Rs. 10,00,000'
-  },
-  {
-    'id' : '3',
-    'title' : 'Software Engineer - I',
-    'location' : 'Hyderabad, India',
-    'salary' : 'Rs. 20,00,000'
-  },
-  {
-    'id' : '4',
-    'title' : 'Front-End Developer',
-    'location' : 'San Francisco, US',
-    'salary' : '$ 120,000'
-  },
-  
-]
-
-
-
 @app.route('/')
 def hello_careers():
     jobs = get_jobs_from_db()
