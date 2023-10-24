@@ -1,8 +1,9 @@
 from flask import Flask, render_template, jsonify
+from database import get_jobs_from_db
 
 app = Flask(__name__)
 
-JOBS = [
+PLACEHOLDER_JOBS = [
   {
     'id' : '1',
     'title' : 'Data Scientist',
@@ -31,13 +32,16 @@ JOBS = [
 ]
 
 
+
 @app.route('/')
 def hello_careers():
-    return render_template('home.html', jobs = JOBS)
+    jobs = get_jobs_from_db()
+    return render_template('home.html', jobs = jobs)
   
 @app.route('/api/jobs')
 def list_jobs():
-  return jsonify(JOBS)
+  jobs = get_jobs_from_db()
+  return jsonify(jobs)
   
 if __name__ == "__main__":
   app.run(host='0.0.0.0', port=81, debug = True)
