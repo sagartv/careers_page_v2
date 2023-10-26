@@ -22,7 +22,7 @@ def list_jobs():
   #return a JSON with the jobs list
   return jsonify(jobs)
 
-@app.route('/api/job/<id>')
+@app.route('/job/<id>')
 def show_job(id):
   job = get_job_from_db(id)
   if not job:
