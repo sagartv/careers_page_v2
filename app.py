@@ -33,7 +33,7 @@ def show_job(id):
 @app.route('/job/<id>/apply', methods= ['post'])
 def apply_job(id):
   data = request.form
-  return jsonify(data)
+  return render_template('submission.html', application = data)
 
 
 

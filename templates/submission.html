@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application Submitted</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <div class = 'container'>
+      <h2> Application Submitted!</h2>
+      <h4> Name: {{application.name}}</h4>
+      <h4> E-mail: {{application.email}}</h4>
+      <h4>LinkedIn URL: {{application.linkedin_url}}</h4>
+      <h4>Resume URL: {{application.resume_url}}</h4>
+      <h4>Education: {{application.education}}</h4>
+      <h4>Work Experience: {{application.work_ex}}</h4>
+    </div>
+  </body>
+</html>
+      
