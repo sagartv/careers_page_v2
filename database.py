@@ -20,7 +20,7 @@ def get_jobs_from_db():
       jobs.append(row._asdict())
     return jobs
 
-
+#query the Cloud-hosted MySQL Database for a specific job
 def get_job_from_db(id):
   values = {'val' : id}
   with engine.connect() as conn:
@@ -31,7 +31,7 @@ def get_job_from_db(id):
     else:
       return rows[0]._asdict()
 
-
+#add job application obtained from form to SQL Database
 def add_application_to_db(job_id, application):
   with engine.connect() as conn:
     query = text("INSERT INTO applications (job_id, full_name, email, linkedin_url, education, work_experience, resume_url) VALUES (:job_id, :full_name,:email, :linkedin_url, :education, :work_experience, :resume_url)")
