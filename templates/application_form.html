@@ -9,13 +9,13 @@
       <form action = "/job/{{job['id']}}/apply" method = "post">
         <div class = "mb-2">
           <label> Full Name</label><br>
-          <input type = "text" name = "full_name" placeholder = "Adam Smith"><br>
+          <input type = "text" name = "full_name" required placeholder = "Adam Smith"><br>
           <label> E-mail</label><br>
-          <input type = "text" name = "email" placeholder = "adamsmith@gmail.com"><br>
+          <input type = "EMAIL" name = "email" required placeholder = "adamsmith@gmail.com"><br>
           <label> LinkedIn URL</label><br>
-          <input type = "text" name = "linkedin_url"><br>
+          <input type = "url" name = "linkedin_url"><br>
           <label>Resume URL</label><br>
-          <input type = "text" name = "resume_url"><br>
+          <input type = "url" name = "resume_url"><br>
           <label> Work Experience</label><br>
           <textarea name = "work_experience"></textarea><br>
           <label> Education</label><br>
@@ -24,20 +24,5 @@
         </div>
       </form>
     </body>
+</html>
 
-          
-          
-          
-          
-        
-        
-        
-        
-
-
-
-
-
-
-        
-      </form>

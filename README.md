@@ -8,4 +8,5 @@ Log:
 7) Started a Cloud MySQL Database on Planetscale.com
 8) Downloaded MySQL Workbench to connect and insert data
 9) Connected to PlanetScale database thorugh SQLAlchemy on Flask
-10) Queried data from PlanetScale MySQL Database through SQLAlchemy on FLASK and displayed data on the FLASK webpage: Jobs List
+10) Queried data from PlanetScale MySQL Database through SQLAlchemy on FLASK and displayed data dynamically on the FLASK webpage: Jobs List
+11) Added functionality to add job applications to the MYSQL DB
